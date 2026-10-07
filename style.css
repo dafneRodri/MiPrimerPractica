@@ -1,0 +1,213 @@
+@import url('https://googleapis.com');
+:root{
+    --amarillo: #f4d35e;
+    --amarilloClaro: #F2E589;
+    --azul1: #457b9d;
+    --azul2: #D4E3E9;
+    --verde: #BACDB1;
+    --azul3: #26457D;
+    --verdeLimon: #a8b86b;
+    --naranja: #e0b35b;
+}
+.DMRR_divPadre.modo_transparente{
+     --amarillo: #f4d35e80;
+    --amarilloClaro: #F2E58980;
+    --azul1: #457b9d80;
+    --azul2: #D4E3E980;
+    --verde: #BACDB180;
+    --azul3: #26457D80;
+    --verdeLimon: #a8b86b80;
+    --naranja: #e0b35b80;
+}
+body{
+    margin: 0;
+    padding: 20px;
+    background-color: #fbfaf4;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    padding: 50px 20px;
+    background-image:url("img/ojos.webp");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(60%);
+    background-repeat: no-repeat;
+
+}
+h1{
+    color: #ffffff;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 80px;
+    line-height: 50px;
+    letter-spacing: 19px;
+}
+h2{
+    color: #092d3f;
+    font-family: "Reenie Beanie", cursive;
+    font-style: 50px;
+    line-height: 90px;
+    letter-spacing: 19px;
+    text-align: center;
+}
+h3{
+    color: #051a25;
+    font-family: "Reenie Beanie", cursive;
+    font-style: 50px;
+    line-height: 90px;
+    text-align: center;
+}
+p, li {
+    margin: 20px;
+    font-family: "Domine", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    
+}
+.DMRR_divPadre{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.DMRR_divPares {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+.DMRR_divImpar{
+    width: 100%;
+}
+.DMRR_divPares2{
+    display: flex;
+    gap: 25px;
+    width: 75%;
+}
+.DMRR_divQuiEs{
+    display: flex;
+}
+.DMRR_div1 {
+    background-color: var(--amarillo);
+    cursor:alias;
+}
+.DMRR_div1:hover {
+    background-color: #e8c94f;
+    background-image: linear-gradient(to right, rgb(255, 208, 0),rgb(82, 167, 90),rgb(49, 160, 29),rgb(34, 85, 25),rgb(41, 118, 243),rgb(26, 46, 144),rgb(30, 43, 129));
+   
+}
+.DMRR_div2 {
+    background-color: var(--amarilloClaro);
+    
+}
+.DMRR_div2:hover {
+    transform: scale(1.03);
+    cursor:cell;
+}
+.DMRR_div3 {
+    background-color: var(--azul1);
+}
+.DMRR_div3:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor:all-scroll;
+    transform: rotateX(45deg);
+}
+.DMRR_div4 {
+    background-color: var(--azul2);
+}
+.DMRR_div4:hover {
+    border: 4px solid #26457D;
+    cursor:col-resize;
+    opacity: 0.5;
+    color:#92a653;
+    width: 300px;
+}
+.DMRR_div5 {
+    background-color: var(--verde);
+}
+.DMRR_div5:hover {
+    transform: translateY(-10px);
+    cursor:crosshair;
+}
+.DMRR_div6 {
+    background-color: var(--azul3);
+}
+.DMRR_div6:hover {
+    border-radius: 30px;
+    cursor:e-resize;
+    transform: rotate(20deg);
+}
+.DMRR_div7 {
+    background-color: var(--verdeLimon);
+}
+.DMRR_div7:hover {
+    background-color: #92a653;
+    cursor:grab;
+        transform: translate(50px, 100px);
+}
+.DMRR_div8 {
+    background-color: var(--naranja);
+    .DMRR_divGaleria{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+.DMRR_div8:hover {
+    transform: rotate(1deg);
+    cursor: wait;
+    
+
+}
+.DMRR_divGaleria img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+}
+.DMRR_divQuiEs {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.DMRR_divPares2 {
+    display: flex;
+    gap: 25px;
+    width: 75%;
+}
+.DMRR_p,.DMRR_p2 {
+    width: 50%;
+}
+.DMRR_div1 img {
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.DMRR_div2 img,.DMRR_div3 img {
+    display: block;
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.DMRR_div4 img{
+    display: block;
+    height: 80%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.DMRR_div5 img,.DMRR_div6 img {
+    display: block;
+    height: 350px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 10px;
+    
+}
