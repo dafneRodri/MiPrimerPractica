@@ -1,4 +1,3 @@
-// Función para cambiar el tema de la página
 const btnTema2 = document.querySelector('#DMRR_cambiarColor');
 const padre = document.getElementById('DMRR_divPadre');
 btnTema2.addEventListener('click', () => {
