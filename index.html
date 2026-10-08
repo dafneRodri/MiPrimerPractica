@@ -10,7 +10,7 @@
         <header>
             <h1>Vincent van Gogh</h1>
         </header>
-        <div class="DMRR_divPadre">
+        <div class="DMRR_divPadre" id="DMRR_divPadre">
             
             <div class="DMRR_divImpar">
                 <div class="DMRR_div1">
@@ -124,8 +124,40 @@
                     </div>
                 </div>
             </div>
+            <div class="DMRR_formulario">
+                <h3>Que opinas de Van Gogh</h3>
+                <form id="DMRR_formulario">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" required aria-placeholder="Escribe tu nombre">
+                    <br>
+                    <label for="correo">Correo electronico</label>
+                    <input type="text" id="correo" name="correo" required aria-placeholder="Escribe tu correo">
+                    <br>
+                    <label for="fvObra">Obra favorita Mencionada</label>
+                    <select>
+                        <option>Girasoles</option>
+                        <option>La Noche Estrellada</option>
+                        <option>Dormitorio en Arlés</option>
+                        <option>Autorretrato</option>
+                        <option>Terraza de café por la noche</option>
+                        <option>Almendro en flor</option>
+                        <option>La Casa Amarilla</option>
+                        <option>Le Moulin de la Galette</option>
+                        <option>La iglesia de Auvers-sur-Oise</option>
+                        <option>Noche estrellada sobre el Ródano</option>
+                        <option>Trigal con cuervos</option>
+                    </select>
+                    <br>
+                    <label for="PreguntaObra">¿Por qué te gusta?</label>
+                    <textarea type="text" id="PreguntaObra" name="PreguntaObra" required placeholder="Escribe tu respuesta"></textarea>
+                    <br><br>
+                    <button type="submit">Enviar</button>
+                    <div id="respuesta"></div>
+                </form>
+            </div>
             
-            <button class="DMRR_button">Click me</button> //tiene que hacer que cambie todos los colorede los div
+            <button class="DMRR_button" id="DMRR_cambiarColor">Click me</button>
         </div>
+        <script src="funtion.js"></script>
     </body>
 </html>
